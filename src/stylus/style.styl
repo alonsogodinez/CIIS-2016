@@ -1,0 +1,484 @@
+black= #111
+white= #f5f5f5
+celeste= #00AAD4
+verde= #B3D44E
+otroceleste= #436EA5
+
+
+#contactForm, #preRegisterForm
+  text-align:center
+  color: white
+  & h3
+    text-align:center
+    font-size: 2.2em
+    font-weight:bolder
+    padding-bottom: 20px
+    border-bottom: 5px solid white
+    display:inline-block
+    margin-left: auto
+    margin-right: -56px
+    margin-bottom: 50px
+  & label
+    display:block
+    padding: 14px
+    font-size:1.4em
+    font-weight:bold
+  & input
+    height: 20px
+    text-align:center
+  & textarea
+    height: 100px
+  & input, & textarea
+    font-size: .9em
+    padding:15px
+    padding-left: 25px
+    display: block
+    border: 0
+    border-radius: 4px
+    width:50%
+    margin:10px auto
+  & select
+    width: calc(50% + 30px)
+    display: inline-block
+    height: 50px
+    text-align-last: center
+    margin-bottom: 24px
+
+
+#submitContact, #submitPreRegister
+  margin-top: .9em
+  font-size: 1.6em
+  display: inline-block
+  padding: .3em 5em
+  margin-bottom 1.3em
+
+.closebt
+  float: right
+  margin-top: 15px
+  margin-right:15px
+  -webkit-transition: all 0.2s
+  -moz-transition: all 0.2s
+  -ms-transition: all 0.2s
+  -o-transition: all 0.2s
+  transition: all 0.2s
+  cursor: pointer
+
+  &:hover
+    transform: rotate(180deg)
+
+
+.spiningAjax
+  width: 35px
+  height:35px
+  margin:auto
+  vertical-align: bottom
+  padding-left: 15px
+
+li
+  list-style: none
+a
+  text-decoration:none
+  color:white
+  &:visited
+    color:white
+  &:hover
+    color:celeste
+
+a, span
+  transition: .2s ease-in-out
+
+body
+  font-family: 'Open Sans', sans-serif
+  color:black
+  background:white
+  text-align: center
+
+header
+
+  background:transparent
+  z-index: 2
+  position absolute
+  top: 0
+  display: flex
+  flex-direction: row
+  width: 100%
+
+
+  & nav
+    margin: auto
+    margin-right: 60px
+    display: flex
+    flex-flow: row
+    font-size: 1.2em
+
+    & .separator
+      border: 1px solid #f5f5f5;
+      margin: 25px 9px;
+      height: 15px;
+
+  .icon-twitter-with-circle:hover,.icon-facebook-with-circle:hover
+    color:celeste
+
+  .icon-twitter-with-circle, .icon-facebook-with-circle
+    font-size:27px
+    margin: auto 3px
+
+  section
+    display: flex
+    padding: 30px 50px;
+    & h2
+      display: flex;
+      flex-direction: column
+      padding-left: 15px
+      & .header-title-number
+        color: verde
+        font-size: 1.3em
+        padding: 0;
+        margin-bottom: -27px
+
+      & .header-title-text
+        font-size: 2.6em
+        color:celeste
+
+    & .separator
+      border: 2px solid verde
+      margin: 30px 15px
+      margin-top: 50px
+
+
+    & p
+      color:celeste !important
+      margin-top: 50px
+      text-align:left
+      font-size:1em
+      line-height: 15px
+
+    & ul
+      margin-left: auto;
+      text-align: right
+      background:red
+
+    & .header-title-number, & .header-title-text, & .separator, p
+      color:white
+      font-weight: bolder
+    & .nav-logo
+      width: 100px
+      height: 100px
+      border-radius: 50%;
+      margin: auto 1px;
+
+
+
+
+
+#index
+  background-image: url('/img/fondo_index.png')
+
+  background-size: cover;
+  display:flex //
+  flex-direction: column//
+  justify-content: center
+  height: 100vh
+
+  min-height: 600px
+  max-width:100%
+  text-align:center
+  vertical-align:center
+  color:white
+  //padding:2.1em
+
+  & .subscription
+    padding: 0 1.5em
+    & input
+      width:25%
+
+      max-width:100%
+
+
+  & h1
+    font-size:1.7em
+    color:verde
+    margin-top:180px
+
+    & span
+      display:block
+    & span.highlighted
+      font-size:1.6em
+      font-weight: 100
+      color:celeste
+      @media (max-width: 480px)
+        font-size:1.35em
+        padding-bottom: .2em
+  & input, & button
+    margin: 1em auto
+    margin-bottom: .5em
+  & button
+    display:inline-block
+    margin-top: .2em
+  & input
+    display:inline-block
+    padding:.8em 4em
+    padding-left: 1em
+    border-radius: 7px
+
+    @media (max-width: 480px)
+      margin-top: 1.3em
+
+#countdown
+  text-align:center
+  display:flex
+  flex-direction: row//
+  justify-content: center
+  & .container_countdown_unit
+    padding: 3em
+    @media only screen and (max-width: 480px)
+      padding: 1.3em
+    @media only screen and (min-width: 481px) and (max-width: 768px)
+      padding: 1.8em
+    & .countdown_unit
+      font-size: 3.2em
+      display:block
+      @media only screen and (max-width: 480px)
+        font-size: 1.9em
+      @media only screen and (min-width: 481px) and (max-width: 768px)
+        font-size: 2.4em
+  & .separator
+    border: 1px solid rgba(255,255,255, 0.5)
+    margin: 4em 0
+    @media only screen and (max-width: 480px)
+      margin: 2em 0
+    @media only screen and (min-width: 481px) and (max-width: 768px)
+      margin: 2.8em 0
+
+
+.btn-outline-inverse
+  color:white
+  background:transparent
+  border-radius: 6px
+  border: 2px solid white
+  padding: .5em
+  &:hover
+    background:white
+    color: celeste
+
+  &:disabled
+    background:transparent
+    color: #ddd
+    border-color: #ddd
+
+  &.green
+    &:disabled
+
+    color: white
+
+    &:hover
+      color: verde
+
+
+
+.btn-outline
+  color:white
+  background:transparent
+  border-radius: 6px
+  border: 2px solid white
+  padding: .5em
+  text-shadow: 1px 1px 1px rgb(48, 67, 109);
+
+
+
+  &.lg
+    font-size: 1.2em
+    padding: .5em 2.2em
+  &:hover
+    background: celeste
+    border-color: celeste
+  &[disabled]
+    background:transparent
+    color: #AAA
+    border-color: #AAA
+
+#map
+  width:100%
+  height:400px
+
+
+
+@media (max-width: 420px)
+  body
+    font-size: 10px  !important
+
+
+  #index
+    h1
+      padding: 0 12px !important
+    .subscription
+      padding: 0 1.5em
+      & input, & button
+        width:90% !important
+        display:block
+        max-width:100%
+
+  header
+    section
+      .nav-logo
+        width:50px !important
+        height:50px !important
+        margin-top: !important
+      .header-title-number
+        margin-top: 15px !important
+      h2
+        padding-left:5px !important
+
+    nav
+      ul
+        padding-left: 5% !important
+
+      .separator
+        margin:  13px 8px !important
+        margin-right: 5px !important
+
+
+@media (max-width: 480px)
+  body
+    font-size: 13px
+
+  #contactForm, #preRegisterForm
+    h3
+      font-size:1.8em !important
+      margin-bottom: 20px !important
+      padding-bottom:15px
+      margin-right: -45px;
+    label
+      padding: 8px
+
+    input, textarea
+      width: 70%
+
+    select
+      width: calc(70% + 30px)
+  .closebt
+    margin-top: 10px
+    margin-right: 10px
+    width: 35px !important
+
+  #index
+    h1
+      margin-top: 80px !important
+    & .subscription
+      padding: 0 1.5em
+
+      & input
+        width:100%
+        display:block
+        max-width:100%
+
+      & button
+        width:100%
+        display:block
+
+
+
+      & input, & button
+        box-sizing: border-box
+
+
+@media (max-width: 561px)
+
+  #contactForm, #preRegisterForm
+    h3
+      font-size:2em
+      margin-bottom: 10px
+  .closebt
+    margin-top: 10px !important
+    margin-right: 10px !important
+    width: 45px
+
+  #index
+    h1
+      margin-top: 0px
+  nav
+    ul
+      padding-left: 5% !important
+
+    .separator
+      margin: 20px 9px !important
+
+  section
+    & p, & .separator
+      display:none !important
+      color:celeste !important
+      margin-top: 75px !important
+      text-align:left
+      font-size:.8em !important
+      line-height: 15px
+
+@media (max-width: 768px)
+  body
+    font-size: 14px
+  header
+    section
+      display: flex
+      padding: 30px 20px !important
+      & h2
+
+        display: flex;
+        flex-direction: column
+        padding-left: 15px
+        & .header-title-number
+          margin-top: 25px
+          color: verde
+          font-size: 1em !important
+          padding: 0px !important
+          margin-bottom: -25px !important
+          line-height: 50px
+
+        & .header-title-text
+          font-size: 2.1em !important
+          margin-bottom: 25px
+          color:celeste
+      & .nav-logo
+        width: 70px
+        height: 70px
+        border-radius: 50%
+        margin: auto 1px
+      & .separator
+        border: 2px solid verde
+        margin: 55px 10px !important
+        margin-top: 80px !important
+
+
+      & p
+        color:celeste !important
+        margin-top: 75px !important
+        text-align:left
+        font-size:.8em !important
+        line-height: 15px
+
+  header
+    nav
+      margin-right: 30px !important
+
+.form-control
+  display: block
+  width: 100%
+  height: 34px
+  padding: 6px 12px
+  font-size: 14px
+  line-height: 1.42857143
+  color: #555
+  background-color: #fff
+  background-image: none
+  border: 1px solid #ccc
+  border-radius: 4px
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+
+#preRegisterBtn
+  width: 30%
+  min-width: 195px
+
+input.capitalize
+  text-transform: capitalize

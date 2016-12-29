@@ -1,0 +1,32 @@
+<ol>
+    {{#each assistant}}
+        <li>{{this.first_name}} {{this.last_name}} ({{this.tipo}}) - {{this.city}} - {{this.email}} - {{this.phone}}
+            {{!-- <a href="/agile/eliminameuno/{{this._id}}">Eliminar</a> --}}
+        </li>
+    {{/each}}
+</ol>
+
+
+<table border="1">
+
+    <thead>
+        <tr>
+            <th>Nombres y apellidos</th>
+            <th>Tipo</th>
+            <th>Email</th>
+            <th>Telefono</th>
+            <th>Ciudad</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each assistant}}
+            <tr>
+                <td> {{this.first_name}} {{this.last_name}} </td>
+                <td> {{this.tipo}} </td>
+                <td> {{this.email}} </td>
+                <td> {{this.phone}} </td>
+                <td> {{this.city}} </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

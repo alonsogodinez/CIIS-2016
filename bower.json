@@ -1,0 +1,16 @@
+{
+  "name": "CIIS2016",
+  "version": "0.0.1",
+  "author": "Alonso Godinez",
+  "licence": "MIT",
+  "dependencies": {
+    "font-awesome": "4.6.1",
+    "jquery": "~2.2.3",
+    "normalize-css": "~4.1.1",
+    "wowjs": "~1.1.2",
+    "remodal": "~1.0.7",
+    "animate.css": "~3.5.1",
+    "jquery.countdown": "~2.1.0",
+    "toastr": "~2.1.2"
+  }
+}

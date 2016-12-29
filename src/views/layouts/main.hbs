@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <title>XVII Congreso Internacional de Informática y Sistemas </title>
+        <link rel="stylesheet" href="/css/agile/bootstrap.min.css" media="screen" title="no title">
+        <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/mediaelementplayer/mediaelementplayer.min.css">
+        <link rel="stylesheet" href="/bower_components/toastr/toastr.min.css">
+        <link rel="stylesheet" href="/bower_components/animate.css/animate.min.css">
+        <link href='/icomoon/style.css' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.min.css" media="screen" title="no title">
+    </head>
+    <body>
+
+
+        {{> site/header }}
+
+        <div class="" id="fullpage">
+
+            {{{ body }}}
+
+        </div>
+    </body>
+    <script src="/bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8" ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn26PVNnI0BqB-umXi2hpf6BFr7P1Ll4M" type="text/javascript"></script>
+    <script src="/js/build/plugins.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bower_components/animatedModal/animatedModal.js"></script>
+    <script src="/js/main.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script type="text/javascript" src="/bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script> -->
+    <!--script src="http://192.168.1.100:35729/livereload.js?snipver=1"></script!-->
+    <script type="text/javascript">
+      // $(document).ready(function() {
+      //   $('#fullpage').fullpage();
+      // });
+    </script>
+    <script type="text/javascript" src="/bower_components/smooth-scroll.js/dist/js/smooth-scroll.min.js"></script>
+    <script type="text/javascript">
+      smoothScroll.init();
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+          $('.navigation').addClass('shrink');
+          $(".nav-logo").addClass("shrink-logo");
+          $(".menu").addClass('items-collapsed')
+          $(".nav-items").addClass("hide")
+        } else {
+          $('.navigation').removeClass('shrink');
+          $(".nav-logo").removeClass("shrink-logo")
+          $(".menu").removeClass('items-collapsed')
+          $(".nav-items").removeClass("hide")
+        }
+      });
+    </script>
+    <!-- <script type="text/javascript" src="/js/responsive-nav.min.js"></script>
+    <script type="text/javascript">
+    // var nav = responsiveNav(".nav-collapse");
+    </script> -->
+</html>

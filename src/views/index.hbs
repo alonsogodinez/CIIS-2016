@@ -1,0 +1,895 @@
+<section class="section section-page" id="index">
+    <h1>
+        <span class="highlighted">Tecnología e Innovación </span>
+        <span> para la Gestión del Conocimiento</span>
+    </h1>
+    <article id="countdown">
+
+        <div class="container_countdown_unit">
+            <span class="countdown_unit" id="days"></span>
+            <span class="countdown_unit_label"> Dias</span>
+        </div>
+
+        <span class="separator"></span>
+
+        <div class="container_countdown_unit">
+            <span class="countdown_unit" id="hours"></span>
+            <span class="countdown_unit_label"> Horas</span>
+        </div>
+
+        <span class="separator"></span>
+        <div class="container_countdown_unit">
+            <span class="countdown_unit" id="minutes"></span>
+            <span class="countdown_unit_label"> Minutos</span>
+        </div>
+
+        <span class="separator"></span>
+
+        <div class="container_countdown_unit">
+            <span class="countdown_unit" id="seconds"></span>
+            <span class="countdown_unit_label"> segundos</span>
+        </div>
+
+    </article>
+    <div class="subscription">
+        {{!-- <input id="email" type="email" placeholder="Tu email"> --}}
+        {{!-- <button id="subscribe" class="btn-outline lg" type="button"> Registrate</button> --}}
+        <button id="preRegisterBtn" href="#preRegisterModal" class="btn-outline lg"> Preinscríbete</button>
+        <br>
+        <button id="preRegisterConcurseBtn" href="#preRegisterConcurseModal" class="btn-outline-chall lg"> Preinscríbete
+            al concurso de programación
+        </button>
+
+    </div>
+
+
+</section>
+<footer>
+
+</footer>
+
+<div id="preRegisterModal">
+    <div class="close-preRegisterModal">
+        <img class="closebt" src="img/closebt.svg" alt="">
+    </div>
+
+    <div class="modal-content">
+        <form id="preRegisterForm">
+            <h3> Preinscripción</h3>
+            <label>Tu Email<input style="color:black;" id="preRegisterEmail" type="email" required></label>
+            <label>Tus Nombres<input style="color:black;" id="preRegisterFirstName" class="capitalize" type="email"
+                                     required></label>
+            <label>Tus Apellidos<input style="color:black;" id="preRegisterLastName" class="capitalize" type="email"
+                                       required></label>
+            <label>Tu DNI<input style="color:black;" id="preRegisterDNI" type="email" required></label>
+            <label>Tipo de inscripción </label>
+            <select id="preRegisterType" class="form-control" name="tipo">
+
+                <option value="PROFESIONAL">Profesional y público en general</option>
+                <option value="PROFESIONAL COLEGIADO">Ing. Sistemas colegiado</option>
+                <option value="ESTUDIANTE">Estudiante</option>
+            </select>
+            <label>Tu ciudad
+                <input type="text" class="capitalize" style="color:black;" id="preRegisterCity" required/>
+            </label>
+            <label>Foto Voucher (Nro Cta: 540-35555839-0-12 BCP a nombre de : YENY LAQUITA )
+                <input type="file" accept="image/*" id="preRegisterVoucher" required></label>
+
+        </form>
+        <button id="submitPreRegister" disabled class="btn-outline-inverse green">Enviar</button>
+    </div>
+</div>
+
+<div id="preRegisterConcurseModal">
+    <div class="close-preRegisterConcurseModal">
+        <img class="closebt" src="img/closebt.svg" alt="">
+    </div>
+
+    <div class="modal-content">
+        <form id="preRegisterForm" class="preRegisterConcurseForm">
+            <h3> Preinscripción al concurso de programación</h3>
+            <label>Nombre del equipo<input style="color:black;" id="preRegisterEmail" name="team" type="text" required></label>
+            <label>Participantes</label>
+            <div class="participant-temp hide">
+
+                <div class="">
+                    <div class="" style="display:inline-block;width:25%;">
+                        <input style="color:black;width:90%;" id="preRegisterLastName" name="DNI" placeholder="DNI"
+                               class="capitalize" type="text">
+                    </div>
+                    <div class="" style="display:inline-block;width:25%;">
+                        <input style="color:black;width:90%;" id="preRegisterLastName" name="name" placeholder="Nombres"
+                               class="capitalize" type="text">
+                    </div>
+                    <div class="" style="display:inline-block;width:25%;">
+                        <input style="color:black;width:90%;" id="preRegisterLastName" name="lastname"
+                               placeholder="Apellidos" class="capitalize" type="text">
+                    </div>
+                    <div class="" style="display:inline-block;width:10%;">
+                        <img class="closebt delete-participant" width="20" src="img/closebt.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="participant">
+
+                <div class="">
+                    <div class="" style="display:inline-block;width:25%;">
+                        <input style="color:black;width:90%;" id="preRegisterLastName" name="DNI" placeholder="DNI"
+                               class="capitalize" type="text" required>
+                    </div>
+                    <div class="" style="display:inline-block;width:25%;">
+                        <input style="color:black;width:90%;" id="preRegisterLastName" name="name" placeholder="Nombres"
+                               class="capitalize" type="text" required>
+                    </div>
+                    <div class="" style="display:inline-block;width:25%;">
+                        <input style="color:black;width:90%;" id="preRegisterLastName" name="lastname"
+                               placeholder="Apellidos" class="capitalize" type="text" required>
+                    </div>
+                    <div class="" style="display:inline-block;width:10%;">
+                    </div>
+                </div>
+            </div>
+            <div class="participant">
+
+                <div class="">
+                    <div class="" style="display:inline-block;width:25%;">
+                        <input style="color:black;width:90%;" id="preRegisterLastName" name="DNI" placeholder="DNI"
+                               class="capitalize" type="text" required>
+                    </div>
+                    <div class="" style="display:inline-block;width:25%;">
+                        <input style="color:black;width:90%;" id="preRegisterLastName" name="name" placeholder="Nombres"
+                               class="capitalize" type="text" required>
+                    </div>
+                    <div class="" style="display:inline-block;width:25%;">
+                        <input style="color:black;width:90%;" id="preRegisterLastName" name="lastname"
+                               placeholder="Apellidos" class="capitalize" type="text" required>
+                    </div>
+                    <div class="" style="display:inline-block;width:10%;">
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-outline add-participant" type="button" name="button">Añadir Participante</button>
+            <br>
+            <br>
+            <button style="width:50%;" type="submit" id="submitPreConcurseRegister" class="btn-outline-inverse green">
+                Enviar
+            </button>
+        </form>
+    </div>
+</div>
+
+<div id="animatedModal">
+    <div class="close-animatedModal">
+        <img class="closebt" src="img/closebt.svg" alt="">
+    </div>
+
+    <div class="modal-content">
+        <form id="contactForm">
+            <h3> Cuentanos tus dudas!</h3>
+            <label>Tu Email<input id="contactEmail" style="color:black;" type="email"></label>
+            <label>Tu Nombre<input id="contactName" style="color:black;" type="text"></label>
+            <label>Tu consulta <textarea style="color:black;" id="contactSubject"></textarea></label>
+        </form>
+        <button id="submitContact" disabled class="btn-outline-inverse">Enviar</button>
+    </div>
+</div>
+
+
+<!-- <section id="info">
+  <article>
+    <p>
+      Conoce un <span class="highlighted">poco</span> mas
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </article>
+
+
+
+  <video width="640" height="360" id="player1" preload="none">
+    <source type="video/youtube" src="https://www.youtube.com/watch?v=oH1Baa2XDro" />
+  </video>
+
+
+</section> -->
+<section id="speakers">
+
+    <h2 style="font-size:40px;">Ponentes</h2>
+    <diw class="row">
+        <article class="col-sm-6 col-md-4 mb1">
+            <div class="profile text-center">
+                <img src="/img/hashimoto.jpeg" width="330" alt="Pic" class="img-circle img-responsive center-block">
+                <div class="title mb16">
+                    <h4 class="uppercase mb0 bold">
+                        <a class="white_link" target="_blank" href="https://www.ime.usp.br/~ronaldo/"> Msc. Ronaldo
+                            Fumio
+                            Hashimoto </a>
+                    </h4>
+                    <span class="bold">Universidad de São Paulo - Brasil</span><br>
+                    <span>Profesor asociado al Departamento de Ciencias de la Computación y el Instituto de Matemáticas y Estadística </span>
+                </div>
+                <p class="mb0"></p>
+            </div>
+        </article>
+        <article class="col-sm-6 col-md-4 mb1">
+            <div class="profile text-center">
+                <img src="/img/luiscaceres.png" width="330" alt="Pic" class="img-circle img-responsive center-block">
+                <div class="title mb16">
+                    <h4 class="uppercase mb0 bold">
+                        <a class="white_link" href="#speakers"> Dr. Luis Marco Cáceres Alvarez</a>
+                    </h4>
+                    <span class="bold">Universidad de Tarapacá - Chile</span><br>
+                    <span>Doctor en Ciencias de la Computación</span>
+                </div>
+                <p class="mb0"></p>
+            </div>
+        </article>
+        <article class="col-sm-6 col-md-4 mb1">
+            <div class="profile text-center">
+                <img src="/img/aracena.jpg" width="330" alt="Pic" class="img-circle img-responsive center-block">
+                <div class="title mb16">
+                    <h4 class="uppercase mb0 bold">
+                        <a class="white_link" target="_blank"
+                           href="https://cl.linkedin.com/in/sebastian-andrés-aracena-aguirre-79194884">
+                            Mgr. Sebastian Aracena Aguirre
+                        </a>
+                    </h4>
+                    <span class="bold">Universidad de Tarapacá - Chile</span><br>
+                    <span>Desarrollador de videojuegos</span>
+                </div>
+                <p class="mb0"></p>
+            </div>
+        </article>
+    </diw>
+    <div class="row">
+        <article class="col-sm-6 col-md-4 mb1">
+            <div class="profile text-center">
+                <img src="/img/rodrigocornejo.jpg" width="330" alt="Pic" class="img-circle img-responsive center-block">
+                <div class="title mb16">
+                    <h4 class="uppercase mb0 bold">
+                        <a class="white_link" target="_blank" href="#">
+                            Mgr. Rodrigo Cornejo
+                        </a>
+                    </h4>
+                    <span class="bold">Universidad de Tarapacá - Chile</span><br>
+                    <span>Desarrollador de software PAR Explora Arica y Parinacota en CONICYT</span>
+                </div>
+                <p class="mb0"></p>
+            </div>
+        </article>
+        <article class="col-sm-6 col-md-4 mb1">
+            <div class="profile text-center">
+                <img src="/img/ankit.jpg" width="330" alt="Pic" class="img-circle img-responsive center-block">
+                <div class="title mb16">
+                    <h4 class="uppercase mb0 bold">
+                        <a class="white_link" target="_blank" href="#">
+                            MTech. MCA. Ankit Kumar
+                        </a>
+                    </h4>
+                    <span class="bold">INICTEL</span><br>
+                    <span>Jefe del Centro de Excelencia en TI India - Perú (IPCEIT) en Lima, Perú, América del Sur.</span>
+                </div>
+                <p class="mb0"></p>
+            </div>
+        </article>
+    </div>
+    <div class="row">
+        <article class="col-sm-6 col-md-4 mb1">
+            <div class="profile text-center">
+                <img src="/img/anacuadros.jpg" width="330" alt="Pic" class="img-circle img-responsive center-block">
+                <div class="title mb16">
+                    <h4 class="uppercase mb0 bold">
+                        <a class="white_link" target="_blank"
+                           href="http://cs.ucsp.edu.pe/people.html#anamariacuadrosucspedupe"> Dra. Ana Maria Cuadros
+                            Valdivia</a>
+                    </h4>
+                    <span class="bold"> Universidad Nacional de San Agustín - Arequipa</span><br>
+                    <span>Doctora en Ciencias de la Computación</span><br>
+                    <span>Magister en Ciencias de la Computación en el Instituto de Ciencias Matemáticas y de Computación en la Universidad de São Paulo</span>
+                </div>
+                <p class="mb0"></p>
+            </div>
+        </article>
+        <article class="col-sm-6 col-md-4 mb1">
+            <div class="profile text-center">
+                <img src="/img/luiszuloaga.jpg" width="330" alt="Pic" class="img-circle img-responsive center-block">
+                <div class="title mb16">
+                    <h4 class="uppercase mb0 bold">
+                        <a class="white_link" target="_blank"
+                           href="https://pe.linkedin.com/in/luis-zuloaga-rotta-b0087510b">
+                            Msc. Luis Zuloaga Rotta
+                        </a>
+                    </h4>
+                    <span class="bold">Universidad Nacional de Ingeniería - Lima</span><br>
+                    <span>Profesor del Área de Sistemas e Informática</span><br>
+                    <span>Consultor en proyectos, sistemas de información y gestión de las T.I.</span>
+                </div>
+                <p class="mb0"></p>
+            </div>
+        </article>
+        <article class="col-sm-6 col-md-4 mb1">
+            <div class="profile text-center">
+                <img src="/img/dennischavez.png" width="330" alt="Pic" class="img-circle img-responsive center-block">
+
+                <div class="title mb16">
+                    <h4 class="uppercase mb0 bold">
+                        <a class="white_link" target="_blank"
+                           href="https://pe.linkedin.com/in/dennis-larry-quispe-chávez-15ab5512"> Lic. Larry Dennis
+                            Quispe Chavez</a>
+                    </h4>
+                    <span class="bold"> Universidad Nacional de San Agustín - Arequipa</span><br>
+                    <span>Licenciado en Educación Especialidad Físico-Matemática</span><br>
+                    <span>Bachiller en Ingeniería de Sistemas</span>
+                </div>
+                <p class="mb0"></p>
+            </div>
+        </article>
+    </div>
+    <div class="row">
+        <article class="col-sm-6 col-md-4 mb1">
+            <div class="profile text-center">
+                <img src="/img/kelvin.jpg" width="330" alt="Pic" class="img-circle img-responsive center-block">
+
+                <div class="title mb16">
+                    <h4 class="uppercase mb0 bold">
+                        <a class="white_link" href="#speakers"> Lic. Kelvin Macedo Ylachoque</a>
+                    </h4>
+                    <span class="bold">TATA Consulting Services</span><br>
+                    <span>Tecnologías IBM en procesos de desarrollo de software</span>
+                </div>
+                <p class="mb0"></p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="section section-page" id="schedule">
+    <h1 style="color:#00aad4;font-size: 2.5em;font-weight:bolder ;padding-bottom: 1em;padding-top:.2em;">Cronograma de
+        Ponencias</h1>
+    <div class="table-responsive">
+        <table border='0' style="margin:0 auto;padding:20px;" cellpadding='0' cellspacing='0'>
+            <tr class='days'>
+                <th></th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td class='time'>9.00</td>
+                <td rowspan='5' class='cs335 blue'> Registro y Entrega de materiales</td>
+                <td colspan='4' class='cs335 navy'>Registro de ingreso</td>
+            </tr>
+            <tr>
+                <td class='time'>9:30</td>
+                <td rowspan='2' class='cs335 red lab'>
+                    Mgr. Rodrigo Cornejo
+                    <span class="bold">Universidad de Tarapacá</span>
+                    <span>"Sistema de información para la gestión del transporte con tecnologías de libre disposición"</span>
+                    <span class="bold">CHILE</span>
+                </td>
+                <td rowspan='2' class='cs335 green lab'>
+                    Mgr. Sebastian Aracena
+                    <span class="bold">CHILE</span>
+                    <span>"Desarrollo de videojuegos"</span>
+                </td>
+                <td rowspan='2' class='cs335  red'>
+                    Alexis Genaro Barahona Peñaranda
+                    <span class="bold">Universidad de Tarapacá</span>
+                    <span>"Control de centro multimedia a través de gestos faciales"</span>
+
+                </td>
+                <td rowspan='2' class="purple">
+                    Ing. Cristhian Córdova Fernández Baca
+                    <span>OSIPTEL</span>
+                    <span>"Banda Ancha de Telefonía Móvil"</span>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td class='time'>10:30</td>
+
+
+            </tr>
+
+            <tr>
+                <td class='time'>11:30</td>
+                <td class="cs335 orange" rowspan="2">
+                    Ing. Alfredo Paz
+                    <span class="bold">Universidad Nacional de San Agustin Arequipa</span>
+                </td>
+                <td class='cs335  blue' rowspan="2">
+                    MTech. MCA. Ankit Kumar <br>
+                    <span class="bold"> INICTEL</span>
+                    <span>Jefe del Centro de Excelencia en TI India - Perú (IPCEIT) en Lima, Perú, América del Sur.</span>
+                    {{!--  MSc. Juan Carlos Valdeiglesias
+                     <span>"Computacion en la niebla"</span>
+                     <span class="bold">Arequipa</span> --}}
+                </td>
+                <td class='cs335 green lab' rowspan="2">
+                    Ing. Victor Hugo Coras Ávila
+                    <span class="bold">UNIVERSIDAD ESAN</span>
+                    <span>Subgerente Adjunto de Riesgo de Crédito en Banco de Crédito BCP</span>
+                    <span>"Data Mining"</span>
+                </td>
+                <td class="navy" rowspan="2">
+                    Mgr. Eldon Mark Flores Mamani
+                    <span>“Datastage: ETL en Datawarehouse”</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class='time'>12.30</td>
+
+            </tr>
+            <tr>
+                <td class='time'>13.00</td>
+                <td colspan='5' rowspan="2" class='cs426 purple'> Almuerzo</td>
+
+
+            </tr>
+            <tr>
+                <td class='time'>14.00</td>
+
+            </tr>
+
+            <tr>
+                <td class='time'>15.00</td>
+                <td class='md303 blue' rowspan="1"> Registro y Entrega de materiales</td>
+                <td class="green" rowspan="2">
+                    DR. Ariane Álvarez
+                    <span>Cuba</span>
+                </td>
+                <td class="blue" rowspan="2">
+                    Dra. Ana cuadros
+                    <span class="bold">Universidad Católica San Pablo de Arequipa </span>
+                    <span>"Mapeamiento visual interactivo de grandes conjuntos de datos"</span>
+                </td>
+                <td class="navy" colspan="" rowspan="2" headers="">
+                    Dr. Luis Marco Caceres Alvarez
+                    <span class="bold">Universidad de Tarapaca</span>
+                </td>
+                <td class="green" rowspan="2">
+                    Mgr. Dennis Quispe Chavez
+                    <span>"Empresas de servicios de TI y su proceso de desarrollo de software"</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class='time'>16.00</td>
+                <td rowspan='2' class='cs335 navy'>
+                    Ceremonia de Inaguración y Ponencia Internacional
+                </td>
+            </tr>
+
+            <tr>
+                <td class='time'>17.00</td>
+                <td colspan='4' class='cs335 purple'>Break</td>
+            </tr>
+
+            <tr>
+                <td class='time'>17.30</td>
+                <td class='green' rowspan="4">
+                    Ing Jorge Pacheco Linares
+                    <span>
+              Director técnico de Ciencias y aplicaciones espacialesde la CONIDA - La Comisión Nacional de Investigación y Desarrollo Aeroespacial
+              </span>
+
+                </td>
+                <td class='cs240 blue' rowspan="4">
+                    CONVERSATORIO “Impacto de las tecnologías y didáctica en la educación”- PANEL Internacional
+                </td>
+
+
+                <td class="red" rowspan="4">
+                    Ing. Luis Zuloaga
+                    <span class="bold">UNI</span>
+                    <span>"Futuro del IoT"</span>
+
+                </td>
+                <td class='cs240 orange' rowspan="4">
+
+                    Msc. Ronaldo Fumio
+                    <span>Universidad de São Paulo - Brasil</span>
+
+                </td>
+                <td class='cs240 blue' rowspan="4">
+                    Kelvin Macedo Ylachoque
+                    <span>"Tecnologías IBM en
+procesos de desarrollo de Software"</span>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td class='time'>18.00</td>
+
+            </tr>
+            <tr>
+                <td class='time'>19.00</td>
+
+            </tr>
+            <tr>
+                <td class='time'>19.30</td>
+            </tr>
+            <tr>
+                <td class='time'>21:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="red " rowspan="2">Ceremonia de Clausura
+                    y Premiación de Concurso de Programación
+                </td>
+
+
+            </tr>
+        </table>
+    </div>
+
+    <h1 style="color:#00aad4;font-size: 2.5em;font-weight:bolder ;padding-bottom: 1em;padding-top:1.5em;">Cronograma de
+        Talleres</h1>
+
+    <div class="table-responsive">
+        <table border='0' style="margin:0 auto;padding:20px;" cellpadding='0' cellspacing='0'>
+            <tr class='days'>
+                <th></th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td class='time'>9.00</td>
+                <td rowspan='5' class='cs335 blue'> Registro y Entrega de materiales</td>
+                <td colspan='4' class='cs335 navy'>Registro de ingreso</td>
+
+
+            </tr>
+            <tr>
+                <td class='time'>9:30</td>
+                <td rowspan='2' class='cs335 orange lab'>
+
+                </td>
+                <td rowspan='2' class='cs335 orange lab'>
+
+                </td>
+                <td rowspan='2' class='cs335  orange'>
+
+                </td>
+                <td rowspan='2' class="orange">
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td class='time'>10:30</td>
+
+
+            </tr>
+
+            <tr>
+                <td class='time'>11:30</td>
+                <td class="cs335 orange" rowspan="2">
+
+                <td class='cs335  blue' rowspan="2">
+
+                </td>
+                <td class='cs335 orange lab' rowspan="2">
+
+                </td>
+                <td class="orange" rowspan="2">
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td class='time'>12.30</td>
+
+            </tr>
+            <tr>
+                <td class='time'>13.00</td>
+                <td colspan='5' rowspan="2" class='cs426 purple'> Almuerzo</td>
+
+
+            </tr>
+            <tr>
+                <td class='time'>14.00</td>
+
+            </tr>
+
+            <tr>
+                <td class='time'>15.00</td>
+                <td class='md303 blue' rowspan="1"> Registro y Entrega de materiales</td>
+                <td class="green" rowspan="2">
+                    Concurso de Programación
+                </td>
+                <td class="blue" rowspan="2">
+
+                </td>
+                <td class="navy" colspan="" rowspan="2" headers="">
+                    Taller <br>
+                    MSc. Edwin Antonio Hinojosa Ramos <br>
+                    "IMPRESORA 3D"
+                </td>
+                <td class="blue" rowspan="2">
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class='time'>16.00</td>
+                <td rowspan='2' class='cs335 navy'>
+                    Ceremonia de Inaguración y Ponencia Internacional
+                </td>
+            </tr>
+
+            <tr>
+                <td class='time'>17.00</td>
+                <td colspan='4' class='cs335 purple'>Break</td>
+            </tr>
+
+            <tr>
+                <td class='time'>17.30</td>
+                <td class='green' rowspan="4">
+
+                </td>
+                <td class='cs240 green' rowspan="4">
+
+                </td>
+
+
+                <td class="green" rowspan="4">
+
+
+                </td>
+                <td class='cs240 orange' rowspan="4">
+
+                    Taller <br>
+                    MSc. Ludmer Edward Arcaya Arhuata <br>
+                    "DATA MINING CON ARBOLES DE DECISION"
+
+                </td>
+                <td class='cs240 blue' rowspan="4">
+                    Taller <br>
+                    Lic. Dennis Larry Quispe Chavez <br>
+                    "Bussiness Inteligence - Orientado DataWareouse"
+                </td>
+
+
+            </tr>
+            <tr>
+                <td class='time'>18.00</td>
+
+            </tr>
+            <tr>
+                <td class='time'>19.00</td>
+
+            </tr>
+            <tr>
+                <td class='time'>19.30</td>
+            </tr>
+            <tr>
+                <td class='time'>21:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="red " rowspan="2">Ceremonia de Clausura
+                    y Premiación de Concurso de Programación
+                </td>
+
+
+            </tr>
+        </table>
+    </div>
+
+
+    <h2 class="baseProgC">
+        <a download class="baseProg" href="/doc/bases-CProg.docx">
+            >> Bases del concurso de programación <<
+        </a>
+        </h3>
+
+
+</section>
+
+
+<!-- Pricing Table Section -->
+<section class="section-page" id="pricing-table">
+    <div class="container">
+        <h2 style="font-size:40px;">Inversión</h2>
+        <div class="table-responsive">
+
+            <table id="price" class="table table-prices">
+                <thead>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        Hasta el 15 de Oct.
+                    </td>
+                    <td>
+                        Hasta el 7 de Nov.
+                    </td>
+                    <td>
+                        Talleres
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        ESTUDIANTES
+                    </td>
+                    <td>
+                        S/. 80.00
+                    </td>
+                    <td>
+                        S/. 100.00
+                    </td>
+                    <td>
+                        S/. 20.00
+                    </td>
+                </tr>
+                <tr style="background:transparent;">
+                    <td>
+                        PROFESIONALES
+                    </td>
+                    <td>
+                        S/. 100.00
+                    </td>
+                    <td>
+                        S/. 120.00
+                    </td>
+                    <td>
+                        S/. 40.00
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <h3>Nro Cta BCP: 540-35555839-0-12 (Yeny Laquita)</h3>
+    <h4> Los depósitos hechos fuera de Tacna, deben adicionar S/. 7.50 de comisión</h4>
+
+</section>
+
+
+{{!-- <section  class="section section-page" id="topics">
+  <h2>Temario</h2>
+
+  <article>
+    <picture>
+      <source src="med-res.jpg">
+    </picture>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    </p>
+  </article>
+
+  <article>
+    <picture>
+      <source src="med-res.jpg">
+    </picture>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    </p>
+  </article>
+
+  <article>
+    <picture>
+      <source src="med-res.jpg">
+    </picture>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    </p>
+  </article>
+
+  <article>
+    <picture>
+      <source src="med-res.jpg">
+    </picture>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    </p>
+  </article>
+
+</section> --}}
+
+
+{{!-- <section  class="section section-page" id="sponsors">
+  <h2>Colaboradores</h2>
+  <article>
+    <picture>
+      <source src="med-res.jpg">
+    </picture>
+  </article>
+
+  <article>
+    <picture>
+      <source src="med-res.jpg">
+    </picture>
+  </article>
+
+  <article>
+    <picture>
+      <source src="med-res.jpg">
+    </picture>
+
+  </article>
+  <article>
+    <picture>
+      <source src="med-res.jpg">
+    </picture>
+  </article>
+</section> --}}
+
+{{!-- <section id="subscription">
+  <h2>Suscríbete y enterate de las actualizaciones!</h2>
+  <input id="email" type="email" placeholder="Tu email">
+  <button id="subscribe" type="button">Suscribirme</button>
+</section>
+ --}}
+
+{{!-- <section id="contact">
+  <article id='contact_info'>
+    <ul>
+      <li><i></i> 999 999999</li>
+      <li><i></i> 999 999999</li>
+      <li><i></i> 999 999999</li>
+
+      <li><i></i> Direccion</li>
+      <li><i></i> ciis.tacna@gmail.com</li>
+
+    </ul>
+  </article>
+  <form action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain" >
+    <input type="text" name="name" placeholder="Tu nombre">
+    <input type="email" name="email" placeholder="Tu email">
+    <input type="text" name="subject" placeholder="Asunto">
+    <textarea name="text" placeholder="Escribenos tu duda "></textarea>
+  </form>
+</section> --}}
+<section id="auspiciadores">
+    <h2 style="font-size:40px;color:#00aad4;">Auspiciadores</h2>
+    <img src="/img/osiptel.png" alt="">
+    <img src="/img/postgrado.gif" alt="">
+    <img src="/img/flores.jpg" alt="">
+    <img src="/img/cip.png" alt="">
+    <img src="/img/apeis.png" alt="">
+    <img src="/img/fontes.jpg" alt="">
+    <img src="/img/minsur.png" alt="">
+    <img src="/img/piscoscuneo.jpg" alt="">
+
+
+    <h2 style="font-size:40px;color:#00aad4;padding-top: 50px;">Organizadores</h2>
+    <img src="/img/agile/logoesis.png" alt="">
+    <img src="/img/agile/logounjbg.png" alt="">
+
+</section>
+<section id="map">
+
+</section>
+
+
+
+{{!-- asfsdfasfsa --}}
